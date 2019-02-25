@@ -8,24 +8,34 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
     ul {
         display: flex;
 
         li {
             list-style-type: none;
 
+            &:last-child a {
+                border-right: none;
+            }
+
+
             a {
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 10px 20px;
                 color: $color-white;
+                border-right: 1px solid $color-white;
+                &:hover {
+                    color: rgba(255,255,255, 0.5);
+                }
             }
         }
     }
 }
 
 .logo-mini {
-    margin-top: 20px;
-    border-top: 5px solid ;
+    padding-top: 20px;
+    border-top: 10px solid $color-green-main;
 }
