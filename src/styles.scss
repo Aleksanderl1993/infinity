@@ -4,6 +4,16 @@
 //                                  Global styles
 //==========================================================================
 
+// normalize.css disabled
+// "./node_modules/normalize.css/normalize.css"
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Homenaje');
+@import url('https://fonts.googleapis.com/css?family=Mada:300,400,600,900');
+
+
+
 /*
  * Structure
  */
@@ -18,10 +28,11 @@
  * Typography
  */
 
-@import url('https://fonts.googleapis.com/css?family=Homenaje');
 
-body {
+h1 {
     font-family: 'Homenaje', sans-serif;
 }
 
-
+body {
+    font-family: 'Mada', sans-serif;
+}

@@ -4,6 +4,7 @@ header {
     background-image: url("../../../assets/header_bg.jpg");
     background-size: cover;
     height: 650px;
+    position: relative;
 }
 
 nav {
@@ -38,4 +39,56 @@ nav {
 .logo-mini {
     padding-top: 20px;
     border-top: 10px solid $color-green-main;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: $color-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 58px;
+    span {
+        display: block;
+        color: $color-mine-shaft;
+
+    }
+}
+
+.cookies-bar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(45, 45, 45, .8);
+    padding: 10px 15%;
+    p {
+        font-size: 14px;
+        font-family: 'Mada', sans-serif;
+        font-weight: 300;
+        color: $color-white;
+        padding: 0 20px;
+        a {
+            color: $color-green-main;
+        }
+    }
+    button {
+        padding: 5px 10px;
+        background-color: $color-green-main;
+        font-size: 14px;
+        color: $color-white;
+        text-transform: uppercase;
+        align-items: flex-start;
+        border: none;
+        border-radius: 5px;
+        white-space: nowrap;
+        &:focus {
+            outline:0;
+        }
+    }
 }
