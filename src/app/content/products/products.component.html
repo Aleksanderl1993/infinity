@@ -1,15 +1,17 @@
-<div class="container">
-  <div class="products-wrapper">
-    <h2>products</h2>
-    <div class="products">
-      <div class="product-wrapper" (click)="showHiddenText()"  *ngFor="let item of products">
-        <div>
-          <img [src]="item.url" alt="">
+<div id="products" class="box">
+    <div class="container">
+        <div class="products-wrapper">
+            <h2>Products</h2>
+            <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
+            <div class="products">
+                <div class="product-wrapper" *ngFor="let item of products">
+                    <img class="showhover" [src]="item.url" alt="Products">
+                    <div class="hover-info">
+                        <img [src]="item.urlOnHover" alt="Products">
+                        <p> {{item.hoverText}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="aaaa" *ngIf="isHiddenElement" [@EnterLeave] >
-          <p > {{item.text}}</p>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
