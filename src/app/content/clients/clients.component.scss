@@ -1,3 +1,5 @@
+@import "../../core/variables";
+
 #clients {
     background: url("../../../assets/bg2.jpg");
     height: 724px;
@@ -5,12 +7,46 @@
 
 //  carousel
 
-
+%carousel-typo {font-size: 30px; font-weight: 300; color: $color-mine-shaft;}
 
 .carousel-img img {
-    width: auto !important;
+    width: auto;
+    margin-right: 30px;
+}
+
+.owl-carousel button.owl-dot.active:focus {
+    outline-color: red !important;
 }
 
 .carousel-content {
     display: flex;
+    .clients-quote {
+        @extend %carousel-typo;
+        position: relative;
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            left: -40px;
+            top: 0;
+            background: url("../../../assets/quote.png");
+            width: 29px;
+            height: 23px;
+        }
+    }
+    .clients-quote-name {
+        @extend %carousel-typo;
+        margin: 10px 0 20px 0;
+        a {
+            color: $color-white;
+        }
+    }
+    div {
+        span {
+            border: 1px solid $color-white;
+            color: $color-white;
+            padding: 3px;
+            margin-right: 5px;
+        }
+    }
 }

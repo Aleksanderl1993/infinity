@@ -8,7 +8,7 @@
     position: absolute;
     cursor: pointer;
     top: 33%;
-    right: 23%;
+    right: 23.5%;
 
 }
 
@@ -31,3 +31,35 @@
 .pointer:hover .tooltiptext {
     visibility: visible;
 }
+
+.address-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    .address {
+        font-size: 22px;
+        font-weight: 300;
+        width: 60%;
+        color: $color-mine-shaft;
+    }
+}
+
+// brand
+
+.brand-name {
+    position: relative;
+    font-size: 22px;
+    color: $color-mine-shaft;
+    &:after {
+        position: absolute;
+        display: block;
+        content: '';
+        left: -45px;
+        top: -3px;
+        background: url("../../../assets/navi.png") no-repeat;
+        width: 33px;
+        height: 33px;
+    }
+}
+
