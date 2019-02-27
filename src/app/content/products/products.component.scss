@@ -1,0 +1,20 @@
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .product-wrapper{
+        flex-basis: 25%;
+        position: relative;
+
+        .aaaa {
+            display: none;
+            position: absolute;
+            z-index: 2;
+        }
+
+        &:hover .aaaa{
+            display: block;
+        }
+    }
+}

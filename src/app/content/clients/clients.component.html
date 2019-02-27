@@ -1,0 +1,26 @@
+<div id="clients" class="box">
+    <div class="container">
+        <h2>Clients</h2>
+
+
+            <owl-carousel [options]="mySlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']">
+                <div class="item carousel-content" *ngFor="let image of mySlideImages;let i = index">
+                    <div class="carousel-img">
+                        <img src={{image}}/>
+                    </div>
+                    <div class="carousel-desc">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Project Manager / <a href="#">Infinity-group.pl</a></p>
+                        <div>
+                            <span>a</span>
+                            <span>x</span>
+                            <span>c</span>
+                        </div>
+
+                    </div>
+                </div>
+            </owl-carousel>
+
+
+    </div>
+</div>

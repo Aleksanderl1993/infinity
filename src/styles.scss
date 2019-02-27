@@ -12,16 +12,24 @@
 @import url('https://fonts.googleapis.com/css?family=Homenaje');
 @import url('https://fonts.googleapis.com/css?family=Mada:300,400,600,900');
 
+@import "app/core/variables";
 
 
 /*
  * Structure
  */
 
+.box {
+    width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .container {
-    max-width: 1280px;
+    max-width: 980px;
     margin: 0 auto;
     overflow: hidden;
+    background-color: rgba(255,255,0,.3);
 }
 
 /*
@@ -33,6 +41,23 @@ h1 {
     font-family: 'Homenaje', sans-serif;
 }
 
+h2 {
+    font-size: 50px;
+    font-family: 'Homenaje', sans-serif;
+    text-align: center;
+    color: $color-mine-shaft;
+}
+
 body {
     font-family: 'Mada', sans-serif;
+}
+
+/*
+ * Features
+ */
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }

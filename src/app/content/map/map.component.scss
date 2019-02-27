@@ -1,0 +1,33 @@
+@import "../../core/variables";
+
+#map {
+    position: relative;
+}
+
+.pointer {
+    position: absolute;
+    cursor: pointer;
+    top: 33%;
+    right: 23%;
+
+}
+
+.pointer .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: $color-green-main;
+    color: $color-white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.pointer:hover .tooltiptext {
+    visibility: visible;
+}

@@ -1,0 +1,28 @@
+#mission {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.quote {
+    font-size: 22px;
+    font-weight: 300;
+    padding: 0 15%;
+    line-height: 1.5em;
+
+    p {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            left: -40px;
+            top: 0;
+            background: url("../../../assets/quote.png");
+            width: 32px;
+            height: 25px;
+        }
+    }
+
+
+}
