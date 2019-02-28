@@ -25,7 +25,7 @@
         <h1>Witamy <span>Infinity Group</span></h1>
 
 
-        <div class="cookies-wrapper">
+        <div class="cookies-wrapper" *ngIf="cookieInfo">
             <div class="cookies-bar container">
 
                 <img src="../../../assets/cookie.png" alt="Cookie pictogram">
@@ -35,7 +35,7 @@
                     use.
                     You can switch the configuration or learn more
                     <a href="#0">here</a></p>
-                <button class="close-cookies-info" type="button">close ✕</button>
+                <button class="close-cookies-info" type="button" (click)="setCookie()">close ✕</button>
             </div>
         </div>
     </div>

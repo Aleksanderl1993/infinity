@@ -14,6 +14,7 @@ import { ProductsComponent } from './content/products/products.component';
 import { MapComponent } from './content/map/map.component';
 import { ContactComponent } from './content/contact/contact.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({
     declarations: [
@@ -31,7 +32,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         AppRoutingModule,
         OwlModule
     ],
-    providers: [],
+    providers: [
+        CookieService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
