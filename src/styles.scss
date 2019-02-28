@@ -22,7 +22,7 @@
 .box {
     max-width: 1360px;
     margin: 0 auto;
-    //padding: 0 20px;
+    position: relative;
 }
 
 .container {
@@ -60,6 +60,18 @@ body, button {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.page-number {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 50px);
+    transform: translateY(50%);
+    width: 100px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: $color-mine-shaft;
+    border-bottom: 1px solid $color-mine-shaft;
 }
 
 /*
