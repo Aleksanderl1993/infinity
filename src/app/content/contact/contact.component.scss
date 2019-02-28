@@ -1,5 +1,9 @@
 @import "../../core/variables";
 
+#contact {
+    background-color: $color-alabaster;
+}
+
 .contact-header {
     display: flex;
     justify-content: space-between;
