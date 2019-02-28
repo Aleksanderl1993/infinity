@@ -5,11 +5,15 @@ header {
     background-size: cover;
     height: 650px;
     position: relative;
+    .container {
+        overflow: visible;
+    }
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    position: relative;
 
     ul {
         display: flex;
@@ -39,7 +43,11 @@ nav {
 .logo-mini {
     padding-top: 20px;
     border-top: 10px solid $color-green-main;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 
 h1 {
     text-transform: uppercase;
@@ -95,6 +103,13 @@ h1 {
         white-space: nowrap;
         &:focus {
             outline:0;
+        }
+        &:hover {
+            background-color: $color-green-secondary;
+            cursor: pointer;
+        }
+        &:active {
+            transform: translateY(2px);
         }
     }
 }

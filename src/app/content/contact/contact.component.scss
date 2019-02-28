@@ -1,0 +1,76 @@
+@import "../../core/variables";
+
+.contact-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: $color-green-main;
+    font-size: 14px;
+    color: $color-white;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    &:focus {
+        outline:0;
+    }
+    &:hover {
+        background-color: $color-green-secondary;
+        cursor: pointer;
+    }
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+//  form
+
+.row-first, .row-second {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    p {
+        font-size: 30px;
+        font-weight: 300;
+        margin: 3px 0;
+    }
+}
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+    form  {
+    button {
+        display: block;
+        margin: 50px auto;
+    }
+    input {
+        margin: 0 6px;
+        font-size: 14px;
+        background-color: transparent;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $color-mine-shaft;
+        outline: none;
+
+        &[type='number']::-webkit-inner-spin-button,
+        &[type='number']::-webkit-outer-spin-button {
+            display: none;
+            margin: 0;
+        }
+    }
+    }
+}
+
+//  footer
+
+footer {
+    background-color: $color-mine-shaft-dark;
+    p {
+        color: $color-white;
+        font-size: 12px;
+    }
+}
