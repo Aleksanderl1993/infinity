@@ -81,3 +81,30 @@ body, button {
 .owl-carousel button.owl-dot:focus {
     outline: none !important;
 }
+
+/*
+ * Media queries
+ */
+
+//  mq tablet
+
+@media all and (max-width: 979px) {
+    body {
+        margin: 0;
+    }
+    .box {
+        padding: 0 10px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .page-number {
+        width: 50px;
+    }
+}
+
+// mq mobile
+
+@media all and (max-width: 599px) {
+
+}

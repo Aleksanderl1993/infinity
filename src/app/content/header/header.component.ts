@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {CookieService} from 'ngx-cookie-service';
 
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -19,7 +20,6 @@ export class HeaderComponent implements OnInit {
         if (this.cookie.get('cookie')) {
             this.cookieInfo = false;
         }
-        // console.log(this.cookie.getAll());
     }
 
     setCookie() {

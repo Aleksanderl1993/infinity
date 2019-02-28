@@ -3,6 +3,7 @@
 #clients {
     background: url("../../../assets/bg2.jpg");
     height: 724px;
+
     .page-number {
         color: $color-white;
         border-bottom-color: $color-white;
@@ -11,7 +12,11 @@
 
 //  carousel
 
-%carousel-typo {font-size: 30px; font-weight: 300; color: $color-mine-shaft;}
+%carousel-typo {
+    font-size: 30px;
+    font-weight: 300;
+    color: $color-mine-shaft;
+}
 
 .carousel-img img {
     width: auto;
@@ -24,9 +29,11 @@
 
 .carousel-content {
     display: flex;
+
     .clients-quote {
         @extend %carousel-typo;
         position: relative;
+
         &:after {
             position: absolute;
             display: block;
@@ -38,13 +45,16 @@
             height: 23px;
         }
     }
+
     .clients-quote-name {
         @extend %carousel-typo;
         margin: 10px 0 20px 0;
+
         a {
             color: $color-white;
         }
     }
+
     div {
         span {
             border: 1px solid $color-white;
@@ -53,4 +63,26 @@
             margin-right: 5px;
         }
     }
+}
+
+@media all and (max-width: 979px) {
+    .carousel-content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    %carousel-typo {
+        font-size: 20px;
+    }
+    .clients-quote:after {
+        //  !important cos after left/top overwrite bug
+        left: 0 !important;
+        top: -30px !important;
+    }
+}
+
+// mq mobile
+
+@media all and (max-width: 599px) {
+
 }

@@ -5,6 +5,7 @@ header {
     background-size: cover;
     height: 650px;
     position: relative;
+
     .container {
         overflow: visible;
     }
@@ -32,8 +33,9 @@ nav {
                 padding: 10px 20px;
                 color: $color-white;
                 border-right: 1px solid $color-white;
+
                 &:hover {
-                    color: rgba(255,255,255, 0.5);
+                    color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
@@ -61,6 +63,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -40%);
     font-size: 58px;
+
     span {
         display: block;
         color: $color-mine-shaft;
@@ -81,16 +84,19 @@ h1 {
     display: flex;
     align-items: center;
     margin: 0 auto;
+
     p {
         font-size: 14px;
         font-family: 'Mada', sans-serif;
         font-weight: 300;
         color: $color-white;
         padding: 0 20px;
+
         a {
             color: $color-green-main;
         }
     }
+
     button {
         padding: 5px 10px;
         background-color: $color-green-main;
@@ -101,15 +107,59 @@ h1 {
         border: none;
         border-radius: 5px;
         white-space: nowrap;
+
         &:focus {
-            outline:0;
+            outline: 0;
         }
+
         &:hover {
             background-color: $color-green-secondary;
             cursor: pointer;
         }
+
         &:active {
             transform: translateY(2px);
+        }
+    }
+}
+
+//  mg tablet
+
+@media all and (max-width: 979px) {
+    header {
+        height: 400px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .cookies-wrapper {
+        width: calc(100% - 20px);
+        padding: 0 10px;
+    }
+}
+
+// mq mobile
+
+@media all and (max-width: 599px) {
+    .cookies-wrapper {
+        position: fixed;
+        z-index: 3;
+        background-color: $color-mine-shaft;
+    }
+    nav {
+        flex-direction: column;
+
+        ul {
+            flex-direction: column;
+            align-items: flex-end;
+
+            li {
+                margin-bottom: 3px;
+
+                a {
+                    border: none;
+                }
+            }
         }
     }
 }

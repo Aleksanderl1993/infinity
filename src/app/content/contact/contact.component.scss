@@ -14,13 +14,16 @@ button {
     border: none;
     border-radius: 5px;
     white-space: nowrap;
+
     &:focus {
-        outline:0;
+        outline: 0;
     }
+
     &:hover {
         background-color: $color-green-secondary;
         cursor: pointer;
     }
+
     &:active {
         transform: translateY(2px);
     }
@@ -32,36 +35,40 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     p {
         font-size: 30px;
         font-weight: 300;
         margin: 3px 0;
     }
 }
+
 .contact-form {
     width: 80%;
     margin: 0 auto;
-    form  {
-    button {
-        display: block;
-        margin: 50px auto;
-    }
-    input {
-        margin: 0 10px;
-        font-size: 14px;
-        background-color: transparent;
-        border-left: none;
-        border-top: none;
-        border-right: none;
-        border-bottom: 1px solid $color-mine-shaft;
-        outline: none;
 
-        &[type='number']::-webkit-inner-spin-button,
-        &[type='number']::-webkit-outer-spin-button {
-            display: none;
-            margin: 0;
+    form {
+        button {
+            display: block;
+            margin: 50px auto;
         }
-    }
+
+        input {
+            margin: 0 10px;
+            font-size: 14px;
+            background-color: transparent;
+            border-left: none;
+            border-top: none;
+            border-right: none;
+            border-bottom: 1px solid $color-mine-shaft;
+            outline: none;
+
+            &[type='number']::-webkit-inner-spin-button,
+            &[type='number']::-webkit-outer-spin-button {
+                display: none;
+                margin: 0;
+            }
+        }
     }
 }
 
@@ -69,8 +76,33 @@ button {
 
 footer {
     background-color: $color-mine-shaft-dark;
+
     p {
         color: $color-white;
         font-size: 12px;
     }
 }
+
+// mq tablet
+
+@media all and (max-width: 979px) {
+    .row-first, .row-second {
+        flex-direction: column;
+    }
+    .form-dot {
+        display: none;
+    }
+
+    .contact-form form input {
+        margin: 20px 0;
+        &::placeholder {
+            text-align: center;
+        }
+    }
+}
+
+    // mq mobile
+
+    @media all and (max-width: 599px) {
+
+    }

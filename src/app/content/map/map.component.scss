@@ -37,6 +37,7 @@
     top: 50%;
     left: 20%;
     transform: translate(-20%, -50%);
+
     .address {
         font-size: 22px;
         font-weight: 300;
@@ -51,6 +52,7 @@
     position: relative;
     font-size: 22px;
     color: $color-mine-shaft;
+
     &:after {
         position: absolute;
         display: block;
@@ -60,6 +62,33 @@
         background: url("../../../assets/navi.png") no-repeat;
         width: 33px;
         height: 33px;
+    }
+}
+
+// mq tablet
+
+@media all and (max-width: 979px) {
+    #map {
+        padding: 0;
+    }
+    .pointer {
+        transform: scale(0.7);
+        top: 26%;
+
+    }
+    .brand-name {
+        font-size: 14px;
+    }
+    .address-wrapper .address {
+        font-size: 12px;
+    }
+}
+
+// mq mobile
+
+@media all and (max-width: 599px) {
+    .brand-name:after {
+        display: none;
     }
 }
 
